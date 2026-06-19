@@ -1,0 +1,30 @@
+n Git, the file status lifecycle describes how a file moves through different states from creation to being stored in the repository.
+
+Git File Lifecycle
+Untracked
+    |
+git add
+    ↓
+Staged
+    |
+git commit
+    ↓
+Tracked (Committed)
+    |
+File Modified
+    ↓
+Modified
+    |
+git add
+    ↓
+Staged
+    |
+git commit
+    ↓
+Tracked (Updated)
+
+
+
+Committed (Tracked)
+
+Save the staged changes into Git history
