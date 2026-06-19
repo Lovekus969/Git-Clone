@@ -22,3 +22,9 @@ Staged
 git commit
     ↓
 Tracked (Updated)
+
+
+
+Committed (Tracked)
+
+Save the staged changes into Git history
