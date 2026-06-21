@@ -28,3 +28,45 @@ Tracked (Updated)
 Committed (Tracked)
 
 Save the staged changes into Git history
+
+Git Architecture First
+
+Before commands, understand the 4 areas:
+
+Working Directory
+       ↓ git add
+Staging Area (Index)
+       ↓ git commit
+Local Repository
+       ↓ git push
+Remote Repository (GitHub)
+git init
+
+Creates a new Git repository.
+
+1 git init
+
+What happens?
+                Project Folder
+                    ↓
+                .git folder created
+
+The .git folder stores:
+                commits
+                branches
+                configuration
+                history
+
+2. git clone
+
+    Copies a remote repository.
+    git clone <repository-url>
+
+    Example:
+                git clone https://github.com/user/project.git
+    
+    Creates:
+                
+                Remote Repo
+                      ↓
+                Local Copy
