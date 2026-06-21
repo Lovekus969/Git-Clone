@@ -70,3 +70,281 @@ The .git folder stores:
                 Remote Repo
                       ↓
                 Local Copy
+3. git status
+
+    Most used command.
+    
+    git status
+    
+    Shows:
+    
+    modified files
+    staged files
+    untracked files
+    current branch
+    
+    Use it constantly.
+
+4. git add
+
+    Moves files to the staging area.
+    
+    Single file:
+    
+    git add index.html
+    
+    All files:
+    
+    git add .
+    
+    Flow:
+    
+    Working Directory
+           ↓
+    Staging Area
+5. git commit
+
+    Creates a snapshot.
+    
+    git commit -m "Added login page"
+    
+    Flow:
+    
+    Staging Area
+           ↓
+    Local Repository
+    
+    Each commit gets a unique hash.
+
+6. git log
+
+    Shows commit history.
+    
+    git log
+    
+    Compact version:
+    
+    git log --oneline
+    
+    Useful in interviews.
+
+7. git diff
+
+    Shows differences.
+    
+    git diff
+    
+    Shows:
+    
+    - old line
+    + new line
+    
+    Compare staged:
+    
+    git diff --staged
+8. git push
+
+    Uploads commits.
+    
+    git push origin main
+    
+    Flow:
+    
+    Local Repository
+          ↓
+    GitHub
+9. git pull
+
+    Downloads updates.
+    
+    git pull origin main
+    
+    Actually does:
+    
+    git fetch
+    git merge
+10. git fetch
+
+    Downloads remote changes.
+    
+    git fetch
+    
+    But does NOT merge them.
+    
+    Safe command.
+
+11. git branch
+    
+    View branches.
+    
+    git branch
+    
+    Create:
+    
+    git branch feature-login
+12. git checkout
+
+    Switch branches.
+    
+    git checkout feature-login
+    
+    Create and switch:
+    
+    git checkout -b feature-login
+13. git switch
+    
+    Modern replacement.
+    
+    git switch feature-login
+    
+    Create:
+    
+    git switch -c feature-login
+14. git merge
+
+    Combines branches.
+    
+    git merge feature-login
+    
+    Example:
+    
+        main
+          \
+           feature-login
+        
+    After merge:
+
+    main
+      |
+    feature-login
+15. git stash
+
+    Temporarily saves work.
+    
+    git stash
+    
+    Restore:
+    
+    git stash pop
+    
+    Useful when switching tasks.
+
+16. git reset
+
+    Moves HEAD backward.
+    
+    Soft:
+    
+    git reset --soft HEAD~1
+    
+    Mixed:
+    
+    git reset HEAD~1
+    
+    Hard:
+    
+    git reset --hard HEAD~1
+    
+    Interview favorite question.
+
+17. git revert
+
+    Safely undo a commit.
+    
+    git revert <commit-id>
+    
+    Creates a new commit that reverses changes.
+    
+    Used in production.
+
+18. git rm
+
+    Remove tracked file.
+    
+    git rm file.txt
+19. git mv
+
+    Rename files.
+    
+    git mv old.txt new.txt
+20. git remote
+
+    View remotes.
+    
+    git remote -v
+    
+    Add remote:
+
+git remote add origin <url>
+21. git tag
+
+    Create release tags.
+    
+    git tag v1.0
+    
+    Used for releases.
+
+22. git cherry-pick
+
+    Copy specific commit.
+    
+    git cherry-pick abc123
+    
+    Useful in large teams.
+
+23. git rebase
+
+    Advanced command.
+    
+    git rebase main
+    
+    Makes history cleaner.
+
+FAANG interviewers often ask:
+
+        Difference between merge and rebase?
+
+24. git blame
+
+    See who changed each line.
+    
+    git blame index.html
+
+Shows:
+
+    author
+    commit
+    line
+25. git show
+
+    Inspect a commit.
+
+    git show abc123
+
+Shows:
+
+        changes
+        author
+        date
+FAANG-Level Commands to Master
+preparing for software engineering internships or new grad roles, know these deeply:
+
+        git init
+        git clone
+        git status
+        git add
+        git commit
+        git log
+        git diff
+        git push
+        git pull
+        git fetch
+        git branch
+        git checkout
+        git switch
+        git merge
+        git stash
+        git reset
+        git revert
+        git rebase
+        git cherry-pick
